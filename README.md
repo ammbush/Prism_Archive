@@ -1,3 +1,5 @@
+![](https://raw.githubusercontent.com/ammbush/Prism_Archive/refs/heads/main/images/%EB%A7%88%ED%82%A4%20%ED%94%84%EB%A1%9C%EB%AA%A8%EC%85%98%20%ED%83%80%EC%9D%BC.png)
+
 # PRISM Archive
 
 > 웹의 모든 텍스트를 가장 직관적으로 수집하는 방법  
@@ -9,7 +11,6 @@
 
 **PRISM Archive**는 웹 서핑 중 발견한 중요한 텍스트 조각을 드래그 앤 드롭만으로 즉시 저장하고 체계적으로 관리하는 크롬 확장 프로그램입니다.
 
-단순히 링크만 저장하는 것이 아니라, **선택한 텍스트의 문맥(Context)**을 함께 저장합니다.  
 저장된 항목을 클릭하면 해당 웹페이지로 이동하여 저장했던 문장을 자동으로 찾고 하이라이트 처리합니다.
 
 특히 스크롤이 긴 기술 문서나 AI와의 긴 대화 로그를 저장하는 데 최적화되어 있습니다.
@@ -17,6 +18,8 @@
 ---
 
 ## ✨ 주요 기능 (Key Features)
+
+![](https://raw.githubusercontent.com/ammbush/Prism_Archive/refs/heads/main/images/%EC%BA%A1%EC%B3%902.png)
 
 ### 1️⃣ 직관적인 수집 (Drag & Drop Archiving)
 
@@ -86,3 +89,7 @@
 ## 📄 License
 
 MIT License
+
+---
+
+![](https://raw.githubusercontent.com/ammbush/Prism_Archive/refs/heads/main/images/%EC%9E%91%EC%9D%80%20%ED%94%84%EB%A1%9C%EB%AA%A8%EC%85%98%20%ED%83%80%EC%9D%BC.png)
