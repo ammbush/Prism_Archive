@@ -1,0 +1,15 @@
+# 1. 시스템 파일
+.DS_Store
+Thumbs.db
+
+# 2. 압축 파일
+*.zip
+*.rar
+*.7z
+
+# 3. 에디터 설정 파일
+.vscode/
+.idea/
+
+# 4. 로그 파일
+*.log
