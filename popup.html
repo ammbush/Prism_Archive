@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body class="light">
+  <div class="app-container">
+    <header>
+      <div class="header-top">
+        <div class="header-left">
+          <div class="logo-symbol">❖</div>
+          <div class="brand-text">
+            <h1>PRISM</h1>
+            <span class="version">3.1</span>
+          </div>
+        </div>
+        <div class="controls">
+          <button id="select-mode-btn" class="icon-btn" title="선택 모드">✓</button>
+          <a href="https://buymeacoffee.com/dg7853417y" target="_blank" class="icon-btn coffee-btn" title="Support">☕</a>
+          <button id="theme-btn" class="icon-btn" title="Toggle Theme">🌙</button>
+          <div class="toggle-wrapper">
+            <input type="checkbox" id="toggle-memo" class="toggle-input">
+            <label for="toggle-memo" class="toggle-label"></label>
+          </div>
+        </div>
+      </div>
+
+      <!-- 뷰 전환 탭 -->
+      <div class="view-tabs">
+        <button class="tab-btn active" data-view="all">Timeline</button>
+        <button class="tab-btn" data-view="domains">Domains</button>
+        <button class="tab-btn" data-view="custom">My Folders</button>
+      </div>
+
+      <!-- ★ 추가된 검색 바 -->
+      <div class="search-container">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="search-input" placeholder="검색 (내용, 제목, 도메인...)">
+        <button id="search-clear-btn" class="search-clear-btn" style="display: none;">✖</button>
+      </div>
+
+      <!-- 폴더 생성 바 (My Folders 탭에서만 보임) -->
+      <div id="folder-creation-bar" class="folder-creation-bar" style="display: none;">
+        <input type="text" id="new-folder-input" placeholder="새 폴더 이름 (예: 프로그래밍)">
+        <button id="add-folder-btn" class="add-folder-btn">+</button>
+      </div>
+    </header>
+    
+    <main id="list-container">
+      <!-- 리스트 렌더링 영역 -->
+    </main>
+
+    <!-- 일괄 작업 바 -->
+    <div id="batch-bar" class="batch-bar">
+      <div class="batch-left">
+        <label class="custom-checkbox-label">
+          <input type="checkbox" id="select-all-checkbox">
+          <span class="checkmark"></span>
+          <span class="batch-count">0개</span>
+        </label>
+      </div>
+      <div class="batch-right">
+        <button id="batch-move-btn" class="batch-btn move-btn">이동</button>
+        <button id="batch-open-btn" class="batch-btn open-btn">열기</button>
+        <button id="batch-delete-btn" class="batch-btn delete-btn">삭제</button>
+      </div>
+    </div>
+
+    <!-- 폴더 선택 모달 -->
+    <div id="move-modal" class="modal-overlay">
+      <div class="modal-content">
+        <h3>폴더로 이동</h3>
+        <div id="modal-folder-list" class="modal-folder-list"></div>
+        <button id="close-modal-btn" class="modal-close-btn">취소</button>
+      </div>
+    </div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
