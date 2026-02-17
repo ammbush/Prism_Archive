@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "PRISM Archive",
+  "version": "1.0.1",
+  "description": "웹사이트 및 대화형 AI 북마크, 드래그 앤 드롭 아카이브",
+  "permissions": ["storage"],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  }
+}
